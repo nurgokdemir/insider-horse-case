@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+import store from "./store";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(store); // Vuex Store'u kullanıma al
+app.mount("#app");

@@ -1,0 +1,15 @@
+.horse-container {
+  flex-grow: 1;
+  position: relative;
+  height: 100%;
+  border: 1px solid #ddd;
+  background: transparent;
+  border-bottom: 3px dashed black;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.horse-image {
+  position: absolute;
+  height: 100%; /* Match container height */
+  transition: transform 0.1s linear; /* Smooth animation */
+}

@@ -1,0 +1,52 @@
+.horse-list {
+  min-width: 200px;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+}
+
+h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: #eeab00;
+  text-align: center;
+  border-radius: 7px;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: clamp(12px, 1.5vw, 14px);
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.2);
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}

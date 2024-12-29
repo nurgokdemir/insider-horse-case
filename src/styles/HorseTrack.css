@@ -1,0 +1,72 @@
+.race-track {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+  margin: 10px auto;
+  background-color: transparent;
+  position: relative;
+}
+
+.track-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.track-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+  height: clamp(50px, 10vh, 80px);
+}
+
+.lane-number {
+  width: 9%;
+  height: 72%;
+  background-color: #591313;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  font-size: clamp(12px, 1.2rem, 16px);
+  border: 4px solid white;
+}
+
+.lap-header h2 {
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: clamp(16px, 2.5vw, 20px);
+  text-align: center;
+}
+
+/* Finish line */
+.finish-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 5px);
+  width: 6px;
+  background-color: #7a0505;
+}
+
+/* Finish text */
+.finish-text {
+  position: absolute;
+  bottom: -25px;
+  right: 37px;
+  transform: translateX(50%);
+  font-size: 1.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .race-track {
+    min-height: 400px;
+  }
+}
